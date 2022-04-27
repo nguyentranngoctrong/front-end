@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Headertodolist />
+
+  <PostComponent />
+
+  <FootertodoList/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PostComponent from './components/PostComponent.vue'
+import Headertodolist from './components/HeadertodoList.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    components: {
+      PostComponent,
+      Headertodolist,
+    }
+};
 </script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: whitescale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: hwb(211 79% 7%);
+  /* margin-bottom: 20px; */
 }
+
 </style>
